@@ -37,6 +37,7 @@
 </style>
 </head>
 <body>
+<h1>전영석 수정1</h1>
 	<%--<%@ include file="views/common/header.jsp" %>--%>
 	<%--<%@ include file="views/board/boardEnrollForm.jsp" %>--%>
  	<%--<%@ include file="views/board/detailPage.jsp" %>--%>
