@@ -37,7 +37,7 @@
 </style>
 </head>
 <body>
-<h1>전영석 바보</h1>
+<h1>박수현 바보</h1>
 	<%--<%@ include file="views/common/header.jsp" %>--%>
 	<%--<%@ include file="views/board/boardEnrollForm.jsp" %>--%>
  	<%--<%@ include file="views/board/detailPage.jsp" %>--%>
