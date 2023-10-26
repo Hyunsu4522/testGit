@@ -37,7 +37,17 @@
 </style>
 </head>
 <body>
+<<<<<<< HEAD
 <h1>박수현 바보</h1>
+=======
+<<<<<<< HEAD
+<h1>전영석 수정123
+	임동건입니다.
+</h1>
+=======
+<h1>전영석 바보</h1>
+>>>>>>> 44197dcfa480132a48fb9110dbc5141b5696d015
+>>>>>>> 78539c641cf894bb3cfc3741d555e3c0bb5195ba
 	<%--<%@ include file="views/common/header.jsp" %>--%>
 	<%--<%@ include file="views/board/boardEnrollForm.jsp" %>--%>
  	<%--<%@ include file="views/board/detailPage.jsp" %>--%>
