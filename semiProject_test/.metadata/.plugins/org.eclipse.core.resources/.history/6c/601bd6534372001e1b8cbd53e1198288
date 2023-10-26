@@ -1,0 +1,254 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>당신 근처의 당근</title>
+
+    <style>
+	    .inner-wrap {
+	    max-width: 1200px;
+	    margin: 0 auto;
+	    width: 100%;
+	}
+	header .gnb {
+	    width: 100%;
+	    padding: 0 20px;
+	}
+	header .gnb h1 a{
+	    display: block;
+	    width: 74px;
+	}
+	header .gnb h1 img{
+	    width: 100%;
+	}
+	
+	
+	header .gnb .nav {
+	    gap: 80px;
+	    display: flex;
+	    width: 100%;
+	    align-items: center;
+	    justify-content: space-between;
+	}
+	header .gnb .menu{
+	    display: flex;
+	    justify-content: space-between;
+	    align-items: center;
+	}
+	header .gnb .menu li a{
+	    font-weight: 700;
+	    font-size: 16px;
+	    color: #4d5159;
+	}
+	header .gnb .menu li a:hover{
+	    color: #ff6f0f;
+	}
+	header .gnb .search {
+	    display: flex;
+	    align-items: center;
+	    gap: 20px;
+	}
+	
+	header .gnb .search input {
+	    width: 30rem;
+	    background: #f2f3f6;
+	    border: none;
+	    border-radius: 0.6rem;
+	    padding: 0.8rem 1.4rem;
+	    box-sizing: border-box;
+	}
+	
+	header .gnb .search input:focus {
+	    outline: 1px solid #ff6f0f;
+	  }
+	
+	header .gnb .search button {
+	    background: #fff;
+	    border: 1px solid #d1d3d8;
+	    color: #212124;
+	    font-weight: 700;
+	    border-radius: 0.4rem;
+	    padding: 0.8rem 1.4rem;
+	}
+	
+	.utill{
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    gap: 40px;
+	}
+	.utill > div{
+	    position: relative;
+	}
+	.utill > div:first-child:before {
+	    display: none;
+	}
+	.utill > div:before {
+	    content: "";
+	    position: absolute;
+	    top: 4px;
+	    left: -40px;
+	    border-right: 1px solid #d8d8d8;
+	    height: 16px;
+	    padding-right: 20px;
+	}
+	.utill a {
+	    font-weight: 700;
+	    font-size: 16px;
+	    line-height: 24px;
+	    letter-spacing: -.23px;
+	}
+	.utill a:hover {
+	    text-decoration: underline;
+	}
+	.utill div.icon a {
+	    display: flex;
+	    align-items: center;
+	    gap:4px;
+	}
+	.utill div a > img {
+	    width: 16px;
+	    height: 16px;
+	}
+	
+	
+	/* contents */
+	.contents{
+	    padding-top: 80px;
+	    width: 80%;
+	    height : 850px;
+	    justify-content: center;
+	    margin: 0 auto;
+	}
+	
+	
+	.contents .contents-wrap{
+	    font-size: 30px;
+	    padding-top: 30px;
+	    display: flex;
+	    justify-content: center;
+	}
+	
+	/* 이미지 */
+	/* .container .nav img{
+	    display: block;
+	    width: 150%;
+	    height: 150;
+	} */
+	.container .nav a{
+	    width : 110px;
+	    display: block;
+	}
+	
+	/* .product:first-child{
+	    margin-left: 220px;
+	} */
+	
+	.nav {
+	    display: flex;  
+	    justify-content: flex-start;
+	}
+	
+	.product  {
+	    padding-top: 50px;
+	    flex: 1;
+	    
+	     /* flex-grow : 1; */
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	   
+	    
+	}
+	
+	.product img{
+	    width: 150%;
+	    height: 100%;
+	    background-position: center;
+	   
+	}
+	
+	.contents .nav .product-menu li{
+	    text-align: center;
+	    font-size: 16px;
+	    color: black;
+	    align-items: center;
+	    justify-content: center;
+	}
+</style>
+</head>
+<body>
+
+        <%@ include file="/views/common/header.jsp" %>
+        <main class="container">
+            <!-- contents -->
+            <div class="contents" id="contents">
+                <div class="contents-wrap">
+                    <div class = "sales-detail">나의 구매내역</div>
+                </div>
+                <div>
+                    <div>              
+                        <nav class="nav">
+                            <div class = "product"><a href="#none"><img src="resources/images/icon/bs.jpg" alt="여자구두"><span class="sr-only">여자구두<span></a>
+                                <ul class="product-menu">
+                                    <li><a href="#none">검은색 여자구두</a></li>
+                                    <li><a href="#none">판매완료</a></li>
+                                    <br>
+                                    <li><a href="#none">100000원</a></li>
+                                </ul>
+                            </div>
+                            <div class = "product"><a href="#none"><img src="resources/images/icon/dress.jpg" alt=""><span class="sr-only">드레스<span></a>
+                                <ul class="product-menu">
+                                    <li><a href="#none">파란색 여자 옷</a></li>
+                                    <li><a href="#none">판매완료</a></li>
+                                    <br>
+                                    <li><a href="#none">40000원</a></li>
+                                </ul>
+                            </div>
+                            <div class = "product"><a href="#none"><img src="resources/images/icon/jac.jpg" alt=""><span class="sr-only">자켓<span></a>
+                                <ul class="product-menu">
+                                    <li><a href="#none">검은 남자 자켓</a></li>
+                                    <li><a href="#none">판매완료</a></li>
+                                    <br>
+                                    <li><a href="#none">70000원</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>                
+                    <div> 
+                        <nav class="nav">
+                            <div class = "product"><a href="#none"><img src="resources/images/icon/hand.jpg" alt="여자구두"><span class="sr-only">핸드폰<span></a>
+                                <ul class="product-menu">
+                                    <li><a href="#none">뭔지 모를 해드폰</a></li>
+                                    <li><a href="#none">판매완료</a></li>
+                                    <br>
+                                    <li><a href="#none">400000원</a></li>
+                                </ul>
+                            </div>
+                            <div class = "product"><a href="#none"><img src="resources/images/icon/mou.png" alt=""><span class="sr-only">마우스<span></a>
+                                <ul class="product-menu">
+                                    <li><a href="#none">검은색 마우스</a></li>
+                                    <li><a href="#none">판매완료</a></li>
+                                    <br>
+                                    <li><a href="#none">7000원</a></li>
+                                </ul>
+                            </div>
+                            <div class = "product"><a href="#none"><img src="resources/images/icon/sil.jpg" alt=""><span class="sr-only">팔찌<span></a>
+                                <ul class="product-menu">
+                                    <li><a href="#none">은색 팔찌</a></li>
+                                    <li><a href="#none">판매완료</a></li>
+                                    <br>
+                                    <li><a href="#none">110000원</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+           
+            <!--// contents -->
+
+</body>
+</html>
